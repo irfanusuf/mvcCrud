@@ -1,7 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;   // importing dependencies 
+
+
+
 using mvc_app2.Models;
 
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext : DbContext     //inheritance
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -9,6 +12,7 @@ public class ApplicationDbContext : DbContext
         }
 
         public DbSet<Intern> Interns { get; set; }
+       
     }
 
 
