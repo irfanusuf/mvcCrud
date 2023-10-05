@@ -1,0 +1,5 @@
+
+Download nugget packages by right clicking on dependencies 
+
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.SqlServer

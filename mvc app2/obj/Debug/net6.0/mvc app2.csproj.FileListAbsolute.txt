@@ -1,0 +1,30 @@
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\appsettings.json
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\mvc app2.staticwebassets.runtime.json
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\mvc app2.exe
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\mvc app2.deps.json
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\mvc app2.runtimeconfig.json
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\mvc app2.dll
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\mvc app2.pdb
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\mvc app2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\mvc app2.AssemblyInfoInputs.cache
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\mvc app2.AssemblyInfo.cs
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\mvc app2.csproj.CoreCompileInputs.cache
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\mvc app2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\mvc app2.RazorAssemblyInfo.cache
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\mvc app2.RazorAssemblyInfo.cs
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\staticwebassets\msbuild.mvc app2.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\staticwebassets\msbuild.build.mvc app2.props
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.mvc app2.props
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.mvc app2.props
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\scopedcss\bundle\mvc app2.styles.css
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\scopedcss\projectbundle\mvc app2.bundle.scp.css
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\mvc app2.dll
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\refint\mvc app2.dll
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\mvc app2.pdb
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\mvc app2.genruntimeconfig.cache
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\ref\mvc app2.dll
