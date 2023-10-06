@@ -3,3 +3,40 @@ Download nugget packages by right clicking on dependencies
 
 Microsoft.EntityFrameworkCore
 Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+
+
+
+
+#Installing EfCore tools globally 
+
+1.	dotnet tool install --global dotnet-ef
+
+
+#To check the list of tools installed globally 
+1.      dotnet tool list --global
+
+
+
+
+
+#Commands for Efcore sql migrations 
+
+# use this command in nuget package console 
+
+1.       Add-Migration "message"   
+
+ // for adding migrations ..after successfully using this command you 
+will be able to see migrations folder into the solution explorer.....but still no data base will
+ be updated unlesss u run the second command  which is as 
+
+
+2.       Update-Database
+
+
+after this if u will check the server explorer you will see data base updated and new tables formed and
+datatyes autommatically given to the columns 
+
+
+
+

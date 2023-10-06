@@ -77,3 +77,11 @@ C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\runtimes\win\l
 C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\mvc app2.csproj.AssemblyReference.cache
 C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\obj\Debug\net6.0\mvc app2.csproj.CopyComplete
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\Humanizer.dll
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\ibn usuf\Desktop\test\mvc app2\mvc app2\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
