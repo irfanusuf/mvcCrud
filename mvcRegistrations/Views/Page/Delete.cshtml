@@ -1,0 +1,22 @@
+﻿@model Intern // Specify the model type as Intern
+
+<h2>Delete Intern</h2>
+
+<p>Are you sure you want to delete the intern with the following details?</p>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>@Model.Email</td>
+    </tr>
+    
+</table>
+
+<form asp-action="DeleteConfirmed" asp-route-id="@Model.Id" method="post">
+    <input type="submit" value="Delete" class="btn btn-danger" />
+    <a asp-action="List" class="btn btn-secondary">Cancel</a>
+</form>
