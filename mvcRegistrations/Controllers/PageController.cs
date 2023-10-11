@@ -34,22 +34,23 @@ namespace mvcRegistrations.Controllers
 
             if (ModelState.IsValid)
             {
-
                 _dbContext.Interns.Add(Application);       // data migration
-
-
-
                 _dbContext.SaveChanges();      // update database 
-
-
                 return RedirectToAction("List");
             }
             else
             {
-
                 return View(Application);
             }
         }
+
+
+
+
+
+
+
+
         [HttpGet]
         public IActionResult List()
         {

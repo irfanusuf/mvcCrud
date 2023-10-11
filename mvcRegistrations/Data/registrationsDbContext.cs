@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;   // importing dependencies 
 
-using mvcRegistrations.Models;
+using mvcRegistrations.Models;   //importing models 
 
 public class registrationsDbContext : DbContext     //inheritance
 {
