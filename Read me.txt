@@ -4,6 +4,7 @@ Download nugget packages by right clicking on dependencies
 Microsoft.EntityFrameworkCore
 Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Tools
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
 
 
 
@@ -24,7 +25,7 @@ Microsoft.EntityFrameworkCore.Tools
 
 # use this command in nuget package console 
 
-1.       Add-Migration "message"   
+1.       Add-Migration "message"  
 
  // for adding migrations ..after successfully using this command you 
 will be able to see migrations folder into the solution explorer.....but still no data base will
@@ -34,9 +35,21 @@ will be able to see migrations folder into the solution explorer.....but still n
 2.       Update-Database
 
 
+
+
+3.  if there are more than 1 db context in datafolder then 
+
+		Add-Migration "message"  -Context "dbContextName"
+
 after this if u will check the server explorer you will see data base updated and new tables formed and
 datatyes autommatically given to the columns 
 
 
+
+
+#          command for creating a unique id in c sharp interactive
+
+
+1.         Console.WriteLine (Guid.NewGuid())
 
 

@@ -28,22 +28,7 @@ namespace mvcRegistrations.Controllers    // file path
 
       
 
-        [HttpPost]
-        public IActionResult SignUp(User Application)
-        {
-
-            if (ModelState.IsValid)
-            {
-                _dbContext.Users.Add(Application);       // data migration
-                _dbContext.SaveChanges();      // update database 
-                return RedirectToAction("Login");
-            }
-            else
-            {
-                return View(Application);
-            }
-        }
-
+        
 
         [HttpGet]
         public IActionResult Login()
