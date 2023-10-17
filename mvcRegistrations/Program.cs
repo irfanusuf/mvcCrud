@@ -7,17 +7,15 @@ var builder = WebApplication.CreateBuilder(args);
 // adding Services 
 builder.Services.AddControllersWithViews();
 
-// adding connection string
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-var connectionString2 = builder.Configuration.GetConnectionString("AuthDbConnection");
+
 
 
 // adding db context
 builder.Services.AddDbContext<registrationsDbContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MainDbConnection")));
 
 builder.Services.AddDbContext<AuthDbContext>(options =>
-  options.UseSqlServer(connectionString2));
+  options.UseSqlServer(builder.Configuration.GetConnectionString("AuthDbConnection")));
 
 
 // configuring the identity 

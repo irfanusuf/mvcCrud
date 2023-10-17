@@ -10,9 +10,8 @@ public class registrationsDbContext : DbContext     //inheritance
     }
 
     public DbSet<Intern> Interns { get; set; }
-    public DbSet<User> Users { get; set; }
+  
    
-    
-
+  
 
 }

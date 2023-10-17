@@ -12,8 +12,8 @@ using mvcRegistrations.Data;
 namespace mvcRegistrations.Migrations.AuthDb
 {
     [DbContext(typeof(AuthDbContext))]
-    [Migration("20231014112803_adding auth db")]
-    partial class addingauthdb
+    [Migration("20231017194716_addingDbContext")]
+    partial class addingDbContext
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -162,15 +162,15 @@ namespace mvcRegistrations.Migrations.AuthDb
                         {
                             Id = "07a6a7ab-7c03-4a37-8866-4e89661c3a71",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "e1025845-524f-4e36-a7a3-896ef77b7cab",
+                            ConcurrencyStamp = "66214a13-cb37-4bc1-9488-cef7b60bb9e6",
                             Email = "irfanusuf33@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "IRFANUSUF33@GMAIL.COM",
                             NormalizedUserName = "IRFANUSUF33@GMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEN2syEd6yb4ttBXNkDZTYLtWGOVAVpGH9FSUbnScC8ZKc61qON8yeR0QzIag/3Uw4A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIyv8oP7e5WUpTuyVOu/7JvvE8VAREPB1CGruh6eEx89Pb4pJc/W2oU6zuXozmApDQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "7d9d8f22-96fa-4cd5-9e50-4498581dc8af",
+                            SecurityStamp = "8cff0821-640c-4157-89f9-a00e92873abd",
                             TwoFactorEnabled = false,
                             UserName = "irfanusuf33@gmail.com"
                         });

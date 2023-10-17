@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace mvcRegistrations.Migrations.AuthDb
 {
     /// <inheritdoc />
-    public partial class addingauthdb : Migration
+    public partial class addingDbContext : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -170,7 +170,7 @@ namespace mvcRegistrations.Migrations.AuthDb
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "07a6a7ab-7c03-4a37-8866-4e89661c3a71", 0, "e1025845-524f-4e36-a7a3-896ef77b7cab", "irfanusuf33@gmail.com", false, false, null, "IRFANUSUF33@GMAIL.COM", "IRFANUSUF33@GMAIL.COM", "AQAAAAEAACcQAAAAEN2syEd6yb4ttBXNkDZTYLtWGOVAVpGH9FSUbnScC8ZKc61qON8yeR0QzIag/3Uw4A==", null, false, "7d9d8f22-96fa-4cd5-9e50-4498581dc8af", false, "irfanusuf33@gmail.com" });
+                values: new object[] { "07a6a7ab-7c03-4a37-8866-4e89661c3a71", 0, "66214a13-cb37-4bc1-9488-cef7b60bb9e6", "irfanusuf33@gmail.com", false, false, null, "IRFANUSUF33@GMAIL.COM", "IRFANUSUF33@GMAIL.COM", "AQAAAAEAACcQAAAAEIyv8oP7e5WUpTuyVOu/7JvvE8VAREPB1CGruh6eEx89Pb4pJc/W2oU6zuXozmApDQ==", null, false, "8cff0821-640c-4157-89f9-a00e92873abd", false, "irfanusuf33@gmail.com" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
