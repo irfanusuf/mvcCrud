@@ -1,8 +1,25 @@
-﻿
+﻿@model mvcRegistrations.Models.RegisterUser
 @{
+
 }
 
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" asp-for="Username">
+    </div>
 
 
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" asp-for="Password">
+    </div>
 
-<h1>hamare pass moomos available nahi hai  </h1>
+
+    <div class="mb-3">
+        <label class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="Confirm password" >
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

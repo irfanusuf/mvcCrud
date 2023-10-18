@@ -1,34 +1,65 @@
-﻿using Microsoft.AspNetCore.Mvc;    //import dependencies
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
 using mvcRegistrations.Models;
-
-namespace mvcRegistrations.Controllers    // file path
+using Microsoft.AspNetCore.Identity;
+namespace mvcRegistrations
 {
-    public class UsersController : Controller   //inheritance
+    public class UsersController : Controller
     {
+        private readonly UserManager<IdentityUser> _userManager;
 
 
-        private readonly registrationsDbContext _dbContext;
-
-        public UsersController(registrationsDbContext dbContext)
+        public UsersController(UserManager<IdentityUser> userManager)
         {
-            _dbContext = dbContext;
+            _userManager = userManager;
+
         }
 
 
 
-
         [HttpGet]
-
-        public IActionResult SignUp()
+        public IActionResult Register()
         {
             return View();
         }
 
 
-      
 
-        
+
+
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterUser model)
+        {
+
+            var user = new IdentityUser { UserName = model.Username, Email = model.Email };
+
+
+            var result = await _userManager.CreateAsync(user, model.Password);
+
+
+
+
+            if (result.Succeeded)
+
+
+
+            {
+                var role = await _userManager.AddToRoleAsync(user, "User");
+
+
+
+
+                if (role.Succeeded)
+                {
+                    return RedirectToAction("Index", "Home");
+
+                }
+            }
+
+            return View();
+        }
 
         [HttpGet]
         public IActionResult Login()
@@ -36,11 +67,12 @@ namespace mvcRegistrations.Controllers    // file path
             return View();
         }
 
+
         [HttpPost]
-        public IActionResult userLogin()
+        public IActionResult LoginUSer()
         {
             return View();
         }
-
     }
 }
+

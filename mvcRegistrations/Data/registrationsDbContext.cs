@@ -12,6 +12,4 @@ public class registrationsDbContext : DbContext     //inheritance
     public DbSet<Intern> Interns { get; set; }
   
    
-  
-
 }

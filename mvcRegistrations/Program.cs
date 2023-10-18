@@ -8,8 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 
-
-
 // adding db context
 builder.Services.AddDbContext<registrationsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MainDbConnection")));
@@ -21,8 +19,12 @@ builder.Services.AddDbContext<AuthDbContext>(options =>
 // configuring the identity 
 
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()       // identity framework
+
+
+
   .AddEntityFrameworkStores<AuthDbContext>();
+//options 
 
 
 
