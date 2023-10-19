@@ -6,15 +6,14 @@ namespace mvcRegistrations
     public class UsersController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<IdentityUser> _signInManager;
 
-
-        public UsersController(UserManager<IdentityUser> userManager)
+        public UsersController(UserManager<IdentityUser> userManager,
+        SignInManager<IdentityUser>signInManager)
         {
             _userManager = userManager;
-
+            _signInManager = signInManager;
         }
-
-
 
         [HttpGet]
         public IActionResult Register()
@@ -23,43 +22,28 @@ namespace mvcRegistrations
         }
 
 
-
-
-
-
-
-
         [HttpPost]
         public async Task<IActionResult> Register(RegisterUser model)
         {
-
             var user = new IdentityUser { UserName = model.Username, Email = model.Email };
 
 
             var result = await _userManager.CreateAsync(user, model.Password);
 
-
-
-
             if (result.Succeeded)
-
-
-
             {
                 var role = await _userManager.AddToRoleAsync(user, "User");
 
-
-
-
                 if (role.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Login");
 
                 }
             }
-
             return View();
         }
+
+
 
         [HttpGet]
         public IActionResult Login()
@@ -69,8 +53,17 @@ namespace mvcRegistrations
 
 
         [HttpPost]
-        public IActionResult LoginUSer()
+        public async Task<IActionResult> Login(LoginUser model)
         {
+            var login = await _signInManager.PasswordSignInAsync(model.Username,
+                model.Password, false, false);
+
+
+            if (login!= null &&  login.Succeeded)
+            {
+                return RedirectToAction("index", "home");
+
+            }
             return View();
         }
     }
