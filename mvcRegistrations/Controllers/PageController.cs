@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using mvcRegistrations.Models;
 
@@ -6,6 +7,8 @@ using mvcRegistrations.Models;
 
 namespace mvcRegistrations.Controllers
 {
+
+    [Authorize (Roles = "Admin")]
     public class PageController : Controller
     {
 

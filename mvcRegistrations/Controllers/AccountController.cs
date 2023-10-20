@@ -3,12 +3,12 @@ using mvcRegistrations.Models;
 using Microsoft.AspNetCore.Identity;
 namespace mvcRegistrations
 {
-    public class UsersController : Controller
+    public class AccountController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
 
-        public UsersController(UserManager<IdentityUser> userManager,
+        public AccountController(UserManager<IdentityUser> userManager,
         SignInManager<IdentityUser>signInManager)
         {
             _userManager = userManager;
@@ -61,11 +61,22 @@ namespace mvcRegistrations
 
             if (login!= null &&  login.Succeeded)
             {
-                return RedirectToAction("index", "home");
+                return RedirectToAction("SecureIndex", "home");
 
             }
             return View();
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Logout()
+
+        {
+
+            await _signInManager.SignOutAsync();   
+            
+            return RedirectToAction("Index", "home");
+        }
+
     }
 }
 

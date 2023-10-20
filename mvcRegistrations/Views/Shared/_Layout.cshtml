@@ -7,7 +7,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
     <title>@ViewData["Title"] - mvcRegistrations</title>
+
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/mvcRegistrations.styles.css" asp-append-version="true" />
@@ -23,15 +27,44 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
+
+                        @if (signInManager.IsSignedIn(User))
+                        {
+                            
+                        }
+                        else
+                        {
+
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                        }
+                       
+
+
+
+
+
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Admin Functionality
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-controller="Page" asp-action="Create">Register intern</a></li>
+                                <li><a class="dropdown-item" asp-controller="Page" asp-action="List">Interns List</a></li>
+                               
+                            </ul>
                         </li>
 
                        
@@ -53,14 +86,14 @@
 
 
 
-                            <a class="me-3 btn btn-light text-dark" asp-area="" asp-controller="Users" asp-action="Logout">logout</a>
+                            <a class="me-3 btn btn-light text-dark" asp-area="" asp-controller="Account" asp-action="Logout">logout</a>
 
                         }
 
                         else
                         {
-                            <a class="me-3 btn btn-light text-dark" asp-area="" asp-controller="Users" asp-action="Login">Login</a>
-                            <a class="me-3 btn btn-light text-dark" asp-area="" asp-controller="Users" asp-action="Register">SignnUp</a>
+                            <a class="me-3 btn btn-light text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                            <a class="me-3 btn btn-light text-dark" asp-area="" asp-controller="Account" asp-action="Register">SignnUp</a>
 
                         }
                         
