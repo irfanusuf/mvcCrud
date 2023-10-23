@@ -1,4 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Identity
+
 @inject SignInManager<IdentityUser> signInManager
 
 
@@ -30,7 +31,7 @@
 
                         @if (signInManager.IsSignedIn(User))
                         {
-                            
+                           
                         }
                         else
                         {
@@ -54,23 +55,52 @@
                         </li>
 
 
+                         @if (signInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Admin Functionality
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" asp-controller="Page" asp-action="Create">Register intern</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Page" asp-action="List">Interns List</a></li>
 
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            
+                        }
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Admin Functionality
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" asp-controller="Page" asp-action="Create">Register intern</a></li>
-                                <li><a class="dropdown-item" asp-controller="Page" asp-action="List">Interns List</a></li>
-                               
-                            </ul>
-                        </li>
+                      
 
                        
                             
                         
                     </ul>
+
+
+
+
+                    @if (signInManager.IsSignedIn(User))
+                    {
+                       <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Post" asp-action="AddPost">Add Post</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Post" asp-action="ViewPost">View Post</a>
+                            </li>
+
+
+                           </ul>
+                    }
+                    else
+                    {
+
+                    }
+
 
 
                     <div class="d-flex align-items-center">

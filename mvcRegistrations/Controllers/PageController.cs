@@ -57,7 +57,7 @@ namespace mvcRegistrations.Controllers
         [HttpGet]
         public IActionResult List()
         {
-            var interns = _dbContext.Interns.ToList(); // Fetch all interns from the database
+            List<Intern> interns = _dbContext.Interns.ToList(); // Fetch all interns from the database
             return View(interns); // Pass the list of interns to the view
         }
 

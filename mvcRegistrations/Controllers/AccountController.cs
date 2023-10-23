@@ -77,6 +77,12 @@ namespace mvcRegistrations
             return RedirectToAction("Index", "home");
         }
 
+
+        [HttpGet]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
     }
 }
 
