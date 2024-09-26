@@ -1,0 +1,45 @@
+﻿
+
+
+@model List<Intern> 
+
+    <h2>Intern List</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Action</th>
+
+               
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var intern in Model)
+        {
+                <tr>
+                    <td>@intern.Id</td>
+                    <td>@intern.Name</td>
+                    <td>@intern.Email</td>
+                    <td>@intern.Phone</td>
+                    <td>@intern.Address</td>
+                    <td>
+                    <a class="btn btn-primary" asp-controller="Page" 
+                    asp-action="Edit" asp-route-id="@intern.Id">
+                        Edit Details
+                    </a>
+
+                    <a class="btn btn-danger" asp-controller="Page"
+                       asp-action="Delete" asp-route-id="@intern.Id">
+                        Delete Intern
+                    </a>
+
+                    </td> 
+                </tr>
+        }
+        </tbody>
+    </table>
