@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using mvcRegistrations.Data;
+using Microsoft.AspNetCore.Http.Features;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,12 @@ builder.Services.AddControllersWithViews();
 //A new instance of CloudinaryHelper will be created each time it's requested (i.e., every time the service is injected).
 
 builder.Services.AddSingleton<CloudinaryHelper>();
+
+// builder.Services.Configure<FormOptions>(options =>  
+// {
+//     options.MultipartBodyLengthLimit = 104857600; // Set size limit, e.g., 100MB
+// });
+
 
 // adding db context
 builder.Services.AddDbContext<registrationsDbContext>(options =>

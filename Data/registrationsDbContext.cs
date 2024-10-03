@@ -10,6 +10,7 @@ public class registrationsDbContext : DbContext     //inheritance
     }
 
     public DbSet<Intern> Interns { get; set; }
-  
+    public DbSet<CartModel> CartModels { get; set; }
+    public DbSet<ProductModel> ProductModels { get; set; }
    
 }

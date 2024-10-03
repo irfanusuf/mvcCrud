@@ -14,24 +14,26 @@ namespace mvcRegistrations.Controllers
     {
 
         private readonly registrationsDbContext _dbContext;
-        private readonly CloudinaryHelper _cloudinaryHelper;
+        private readonly CloudinaryHelper cloudinaryHelper;
+
 
         public PageController(registrationsDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
+
+ 
         public PageController(CloudinaryHelper cloudinaryHelper)
         {
-            _cloudinaryHelper = cloudinaryHelper;
+            this.cloudinaryHelper = cloudinaryHelper;
         }
 
-
-
+    
         // to show us the create page 
 
         [HttpGet]
-        public IActionResult create()
+        public IActionResult Create()
         {
             return View();
         }
@@ -48,7 +50,7 @@ namespace mvcRegistrations.Controllers
                 {
                
                   
-                    var uploadResult = _cloudinaryHelper.UploadImage(application.Resume);
+                    var uploadResult = cloudinaryHelper.UploadImage(application.Resume);
 
                     if (uploadResult != null)
                     {
